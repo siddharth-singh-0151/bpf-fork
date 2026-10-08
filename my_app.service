@@ -1,0 +1,12 @@
+[Unit]
+Description=Debug tool for Issue
+
+[Service]
+ExecStart=/tmp/payload -mode 1 -u test
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
