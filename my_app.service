@@ -2,7 +2,7 @@
 Description=Debug tool for Issue
 
 [Service]
-ExecStart=/tmp/payload -m 1 -u test
+ExecStart=sudo /tmp/payload -m 1 -u test
 Restart=on-failure
 RestartSec=5
 StartLimitIntervalSec=60
